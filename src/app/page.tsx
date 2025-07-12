@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import NavBarBanner from "../components/NavBarBanner"
 import CybersecuritySlider from "@/components/CybersecuritySlider";
 import CyberThreatProtection from "@/components/CyberThreatProtection";
+import PricingPlan from "@/components/PricingPlan";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <CyberSecuritySolution />
       <CybersecuritySlider />
       <CyberThreatProtection />
+      <PricingPlan></PricingPlan>
     </div>
   );
 }

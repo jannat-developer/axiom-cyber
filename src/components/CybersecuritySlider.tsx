@@ -47,20 +47,7 @@ export default function CybersecuritySlider() {
       >
         {cards.map((card, idx) => (
           <SwiperSlide key={idx}>
-            {/* <div className="bg-gray-800 p-6 rounded-xl text-center hover:bg-gray-700 transition">
-              <div className="text-4xl mb-4">{card.icon}</div>
-              <h3 className="text-xl font-semibold">{card.title}</h3>
-              <p className="text-gray-400 mt-2">{card.description}</p>
-              <button className="mt-4 bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded">
-                Explore More
-              </button>
-            </div> */}
-            <div
-              className="p-6 rounded-xl text-center hover:brightness-110 transition text-white"
-              style={{
-                background: 'linear-gradient(96.79deg, #171717 -62.94%, #323335 -62.92%, rgba(90, 90, 90, 0) 54.42%, #171717 174.24%)',
-              }}
-            >
+            <div className="bg-gray-800 p-6 rounded-xl text-center hover:bg-gray-700 transition">
               <div className="text-4xl mb-4">{card.icon}</div>
               <h3 className="text-xl font-semibold">{card.title}</h3>
               <p className="text-gray-400 mt-2">{card.description}</p>
@@ -68,7 +55,6 @@ export default function CybersecuritySlider() {
                 Explore More
               </button>
             </div>
-
           </SwiperSlide>
         ))}
       </Swiper>
