@@ -43,7 +43,7 @@ export default function CybersecuritySlider() {
           1024: { slidesPerView: 3.5 },
         }}
         modules={[Autoplay]}
-        className="px-6 max-w-6xl mx-auto"
+        className="px-6 max-w-full mx-auto"
       >
         {cards.map((card, idx) => (
           <SwiperSlide key={idx}>

@@ -8,7 +8,7 @@ export default function Banner() {
     return (
         <div className="relative font-sans overflow-hidden">
             {/* ✅ Top-right Background Decoration */}
-           
+
             <div
                 style={{
                     position: 'absolute',
@@ -55,7 +55,7 @@ export default function Banner() {
                         <button className="bg-red-600 hover:bg-red-700 text-white text-[1rem] px-6 py-3 rounded">
                             LEARN MORE
                         </button>
-                        <button className="border text-[1rem] border-[#DE3A3A] px-6 py-3 rounded hover:bg-white text-white">
+                        <button className="border text-[1rem] border-[#DE3A3A] px-6 py-3 rounded  text-white">
                             TALK WITH US
                         </button>
                     </div>

@@ -28,7 +28,7 @@ export default function CyberThreatProtection() {
   return (
     <section className="bg-[#171717] text-white py-20 px-4">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div className='border border-[#DE3A3A] rounded-2xl'>
+        <div className='border border-[#DE3A3A] rounded-2xl '>
           <Image
             src="/images/cyber-city.png"
             width={200}
