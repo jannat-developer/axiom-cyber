@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import { FaChevronRight } from "react-icons/fa";
+import { IoStar } from 'react-icons/io5';
 
 
 const cards = [
@@ -12,21 +13,29 @@ const cards = [
         title: 'Endpoint Security',
         description: 'Our Cloud Security solution protects your cloud environments with AI-driven threat detection, Zero Trust architecture, and real-time monitoring. Secure your data, Azure, Google Cloud, and more.',
         icon: '🛡️',
+        name: 'Miss Sammy Feeney',
+        position: 'James R., IT Director'
     },
     {
         title: 'Cloud Security',
         description: 'Our Cloud Security solution protects your cloud environments with AI-driven threat detection, Zero Trust architecture, and real-time monitoring. Secure your data, Azure, Google Cloud, and more.',
         icon: '☁️',
+         name: 'Miss Sammy Feeney',
+        position: 'James R., IT Director'
     },
     {
         title: 'Network Security',
         description: 'Our Cloud Security solution protects your cloud environments with AI-driven threat detection, Zero Trust architecture, and real-time monitoring. Secure your data, Azure, Google Cloud, and more.',
         icon: '🌐',
+         name: 'Miss Sammy Feeney',
+        position: 'James R., IT Director'
     },
     {
         title: 'Data Protection',
         description: 'EOur Cloud Security solution protects your cloud environments with AI-driven threat detection, Zero Trust architecture, and real-time monitoring. Secure your data, Azure, Google Cloud, and more.',
         icon: '🔐',
+         name: 'Miss Sammy Feeney',
+        position: 'James R., IT Director'
     },
 ];
 
@@ -94,22 +103,30 @@ export default function ClientSay() {
                     >
                         {cards.map((card, idx) => (
                             <SwiperSlide key={idx}>
-                                
-                                    <div className=" p-6 text-center transition bg-black rounded-[1rem] border border-[#DE3A3A]">
-                                        {/* <div className="text-4xl mb-4">{card.icon}</div> */}
-                                        <h3 className="text-xl font-semibold text-left">{card.title}</h3>
-                                        <p className="text-gray-400 mt-2 text-left">{card.description}</p>
-                                        <div className='flex items-center justify-between mt-8'>
-                                            <div className='bg-[#FFC876] w-fit p-2 rounded-[10px]'>
-                                                <img src="/images/fi.png" alt="" />
-                                            </div>
-                                            <div className='flex items-center gap-6'>
-                                                <div className='uppercase'>Explore more</div>
-                                                <div><FaChevronRight /></div>
+
+                                <div className=" p-6 text-center transition bg-black rounded-[1rem] border border-[#DE3A3A]">
+                                    {/* <div className="text-4xl mb-4">{card.icon}</div> */}
+                                    <h3 className="text-xl font-semibold text-left">{card.title}</h3>
+                                    <p className="text-gray-400 mt-2 text-left">{card.description}</p>
+                                    <div className='flex items-center justify-start gap-5 mt-8'>
+                                        <div className=' '>
+                                            <img src="/images/image.png" className='rounded-full' alt="" />
+                                        </div>
+                                        <div className='flex flex-col items-start gap-2'>
+                                            <div className='text-white text-[18px] font-semibold text-start'>{card.name}</div>
+                                            <div className='text-white text-[12px] font-normal text-start'>{card.position}</div>
+                                            <div className='flex items-center gap-2'>
+                                                <IoStar className='text-[#FFA41B]' />
+                                                <IoStar className='text-[#FFA41B]' />
+                                                <IoStar className='text-[#FFA41B]' />
+                                                <IoStar className='text-[#FFA41B]' />
+                                                <IoStar className='text-[#FFA41B]' />
                                             </div>
                                         </div>
                                     </div>
-                                
+
+                                </div>
+
                             </SwiperSlide>
                         ))}
                     </Swiper>
