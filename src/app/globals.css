@@ -28,3 +28,32 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
+
+
+.card-with-notch {
+  position: relative;
+  background-color: black;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 40px) 0,
+    100% 40px,
+    100% 100%,
+    0 100%
+  );
+  overflow: visible;
+  border-radius: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.card-with-notch::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(to top right, #E39090, #E39090);
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+  z-index: 5;
+}
+
