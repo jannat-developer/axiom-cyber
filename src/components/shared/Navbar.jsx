@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-2">
           {/* <img src={logo} alt="SG Financial Logo" className="h-10 w-auto" /> */}
           <Image
-            src={`https://www.logodesignlove.com/images/literal/penguin-logo.jpg`}
+            src={'images/logo.png'}
             alt="Logo"
             width={120}
             height={40}

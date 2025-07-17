@@ -87,7 +87,7 @@ export default function ClientSay() {
                 <div className="max-w-7xl mx-auto text-center">
 
                     <h2 className="text-[2rem] md:text-[3rem] text-white text-center mb-12">
-                        see What Our Clients Say
+                        See What Our Clients Say
                     </h2>
                     <Swiper
                         onSwiper={(swiper) => (swiperRef.current = swiper)}
